@@ -1,4 +1,4 @@
-/*# Header */
+/*! ++++++++++ Header  ++++++++++*/
 
 header {
     background-image: url(/img/bg-pattern-intro.svg), linear-gradient(to left, #ff3d54, #ff8f70);
@@ -9,24 +9,23 @@ header {
     border-bottom-left-radius: 100px;
 }
 
-/*# Nav Menú  */
+/*! ++++++++++ Nav - Bar  ++++++++++*/
 
 .nav-bar {
-    padding: 5px 0px;
     width: 90%;
-    display: flex;
-    align-items: center;
     margin: auto;
     padding-top: 3rem;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
-    padding: 5px;
     width: 100%;
+    padding: 5px;
+    margin-left: 5px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 5px;
 }
 
 .loggin {
@@ -40,7 +39,7 @@ header {
     align-items: center;
 }
 
-/*$ ++++++++ Menú ++++++++ */
+/*! ++++++++++ Menu  ++++++++++*/
 
 .nav-menu {
     font-family: 'Overpass', sans-serif;
@@ -70,7 +69,7 @@ header {
     margin: 5px;
 }
 
-/*! Submenú */
+/*# ++++++++++ Sub-menu  ++++++++++*/
 
 .nav-menu ul li ul {
     display: none;
@@ -80,7 +79,7 @@ header {
     border: 1px solid yellow;
 }
 
-/*! seccion que muetra el submenú al hacer hover  inicio */
+/*# seccion que muetra el submenú al hacer hover  inicio */
 
 .nav-menu ul li:hover ul {
     display: block;
@@ -88,7 +87,7 @@ header {
     border-radius: 9px;
 }
 
-/*! seccion que muetra el submenú al hacer hover  Fin */
+/*# seccion que muetra el submenú al hacer hover  Fin */
 
 .nav-menu ul li ul .sub-menu {
     color: #4b5862;
@@ -118,7 +117,7 @@ header {
     border-bottom-right-radius: 9px;
 }
 
-/*! Botón de login  */
+/*! ++++++++++ Login - btn  ++++++++++*/
 
 .login-btn {
     text-decoration: none;
@@ -131,7 +130,7 @@ header {
     color: #fff;
 }
 
-/*! Boton de registro  */
+/*! ++++++++++ Registro - btn  ++++++++++*/
 
 .sign-up-btn {
     padding: 10px 16px;
@@ -149,7 +148,7 @@ header {
     color: honeydew;
 }
 
-/*# div header-text */
+/*! ++++++++++ Header - Text  ++++++++++*/
 
 .header-text {
     font-family: 'Overpass', sans-serif;
@@ -189,7 +188,7 @@ header {
     color: hsl(356, 100%, 66%);
 }
 
-/*& Movil  */
+/*! ++++++++++ Movil  ++++++++++*/
 
 .menu-icon {
     display: none;
@@ -198,6 +197,8 @@ header {
 .mobile {
     display: none;
 }
+
+/*& ++++++++++++++++++++ Movil - Menú - Responsive  ++++++++++++++++++++*/
 
 @media screen and (max-width: 900px) {
     body {
@@ -208,16 +209,13 @@ header {
     header {
         width: auto;
     }
-    nav {
-        padding-top: 15px !important;
-    }
     .menu-icon {
+        color: rgb(255, 255, 255);
         display: block;
         position: fixed;
         top: 15px;
         right: 16px;
         font-size: 2.5rem;
-        color: rgb(255, 255, 255);
     }
     .menu {
         position: absolute;
@@ -227,7 +225,7 @@ header {
         border: orange solid 2px;
         padding: 0;
     }
-    /*& Menu movil */
+    /*! ++++++++++ Menu - Movil  ++++++++++*/
     .container-menu {
         width: 80%;
         margin: 1px;
@@ -235,12 +233,7 @@ header {
         flex-direction: column;
         justify-content: center;
     }
-    /* .container-menu .cont-enlace {
-        box-shadow: 0px 0px 2px 1px white;
-        width: 100%;
-        border: #ff8f70 2px solid;
-    } */
-    /* Estilos para las opciones  */
+    /*# Estilos para las opciones  */
     .container-menu .cont-enlace .opcion {
         background-color: #ffffff;
         color: hsl(0, 0%, 8%);
@@ -258,7 +251,29 @@ header {
     .container-menu .cont-enlace .opcion p {
         border: #ffffff 1px solid;
     }
-    /**Efecto para aparecer y desaparecer enlaces  */
+    .icon-mb-menu {
+        color: #ff8f70;
+        display: flex;
+        padding: 0;
+        margin: 15px 0px;
+    }
+    /*% Estilos para los enlaces */
+    .container-menu .cont-enlace .enlace {}
+    .container-menu .cont-enlace .enlace a {
+        background: rgb(255, 255, 255);
+        text-decoration: none;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        display: block;
+        padding: 10px 15px;
+        color: black;
+        text-align: center;
+    }
+    .container-menu .cont-enlace .enlace a:hover {
+        background-color: hsl(0, 0%, 87%);
+        color: #ff8f70;
+    }
+    /** Efecto para aparecer y desaparecer enlaces  */
     .container-menu .cont-enlace .enlace {
         height: 0px;
         overflow: hidden;
@@ -266,36 +281,23 @@ header {
     .mobile .container-menu .cont-enlace .animacion {
         height: 100%;
     }
-    /**Efecto para aparecer y desaparecer enlaces  */
-    /* Estilos para los enlaces */
-    .container-menu .cont-enlace .enlace a {
-        display: block;
-        padding: 10px 15px;
-        text-decoration: none;
-        font-size: 20px;
-        color: black;
-        text-align: center;
-        background: rgb(138, 138, 61);
-        border: 1px solid black;
-    }
-    .container-menu .cont-enlace .enlace a:hover {
-        background-color: grey;
-        color: wheat;
-    }
-    .icon-mb-menu {
-        color: #ff8f70;
-        display: flex;
-        padding: 0;
-        margin: 15px 0px;
-    }
-    /*& Menu movil final */
-    /**Muestra el menu con el boton de hamburguesa  */
+    /** Efecto para aparecer y desaparecer enlaces  */
+    /*& Muestra el menu con el boton de hamburguesa  */
     .spread {
         position: absolute;
         display: flex;
         justify-content: center;
         width: 100vw;
-        background-color: transparent;
+        background-color: #ffffff;
+    }
+    .loggin {
+        background-color: #ffffff;
+        width: 97%;
+        display: flex;
+        justify-content: center;
+    }
+    .loggin .login-btn:hover {
+        color: red;
     }
     /**Header Text  */
     .header-text {
