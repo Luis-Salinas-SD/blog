@@ -52,7 +52,6 @@ header {
     display: flex;
     padding: 0;
     text-align: center;
-    width: auto;
 }
 
 .nav-menu ul li {
@@ -76,6 +75,7 @@ header {
     position: absolute;
     background-color: #fff;
     margin-left: 30%;
+    width: 75%;
 }
 
 /*# seccion que muetra el submenú al hacer hover  inicio */
