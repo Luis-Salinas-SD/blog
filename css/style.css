@@ -75,7 +75,6 @@ header {
     position: absolute;
     background-color: #fff;
     margin-left: 30%;
-    width: 100%;
 }
 
 /*# seccion que muetra el submenú al hacer hover  inicio */
@@ -84,6 +83,7 @@ header {
     display: block;
     color: black;
     border-radius: 9px;
+    width: 70%;
 }
 
 /*# seccion que muetra el submenú al hacer hover  Fin */
