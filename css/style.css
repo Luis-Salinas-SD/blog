@@ -76,7 +76,6 @@ header {
     position: absolute;
     background-color: #fff;
     margin-left: 30%;
-    border: 1px solid yellow;
 }
 
 /*# seccion que muetra el submenú al hacer hover  inicio */
@@ -198,6 +197,11 @@ header {
     display: none;
 }
 
+main {
+    width: auto;
+    height: 300px;
+}
+
 /*& ++++++++++++++++++++ Movil - Menú - Responsive  ++++++++++++++++++++*/
 
 @media screen and (max-width: 900px) {
@@ -287,8 +291,10 @@ header {
         position: absolute;
         display: flex;
         justify-content: center;
-        width: 100vw;
+        width: 98vw;
         background-color: #ffffff;
+        padding: 5px;
+        border-radius: 25px;
     }
     .loggin {
         background-color: #ffffff;
