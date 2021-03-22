@@ -51,7 +51,7 @@ header {
 .nav-menu ul {
     display: flex;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 
 .nav-menu ul li {
