@@ -83,7 +83,7 @@ header {
     display: block;
     color: black;
     border-radius: 9px;
-    width: 70%;
+    width: auto;
 }
 
 /*# seccion que muetra el submenú al hacer hover  Fin */
