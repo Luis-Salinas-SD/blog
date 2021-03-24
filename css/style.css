@@ -234,16 +234,14 @@ main {
 
 /** Seccion 2  */
 
-.mid-section {
-    background-color: blueviolet;
-    border: 2px solid rgb(255, 109, 65);
-    width: 100%;
+.state-section {
+    margin: 3rem 0;
+    padding: 2px;
+    color: #e3e3e6;
+    height: 480px;
 }
 
-.flex-section {
-    padding: 0rem 7rem 3rem 7rem;
-    border: 5px solid yellowgreen;
-    color: seashell;
+.state {
     background-image: url('../img/bg-pattern-circles.svg'), linear-gradient(#2c2d3f, #3f4164);
     background-repeat: no-repeat;
     background-position-x: -200px, left;
@@ -251,30 +249,27 @@ main {
     border-radius: 0 70px 0 70px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 250px;
-    width: auto;
-    position: relative;
+    justify-content: space-evenly;
+    height: 370px;
 }
 
-.flex-section img {
-    width: auto;
-    height: 300px;
-    border: rgb(35, 255, 90) 2px solid;
+.state img {
+    width: 530px;
+    height: 550px;
+    margin: 0;
+    padding: 0;
 }
 
 .state-txt {
-    width: 27rem;
+    width: 30%;
     align-self: center;
     margin-top: 2.5rem;
-    border: rgb(35, 255, 90) 2px solid;
 }
 
 /** Seccion 3  */
 
 .free-section {
-    background-color: skyblue;
-    margin: 5rem 0;
+    margin: .5em 0 0 0;
     display: block;
 }
 
@@ -284,27 +279,28 @@ main {
 }
 
 .free-section img {
-    border: red solid 2px;
-    width: 500px;
+    width: 50%;
     height: 400px;
 }
 
 .free-txt {
-    border: red solid 2px;
-    width: 40%;
-    padding: 0 7rem;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.free-txt p {
+    padding: .5rem 2rem;
 }
 
 /** footer */
 
 footer {
-    margin-top: 50px;
     background: rgb(20, 20, 46);
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 0px 70px 0px 0px;
     display: block;
-    margin: 5px 0 0 0;
+    margin-top: 1px;
 }
 
 /*& ++++++++++++++++++++ Movil - Menú - Responsive  ++++++++++++++++++++*/
@@ -313,7 +309,6 @@ footer {
     body {
         width: 100%;
         height: 100%;
-        background-color: rgb(66, 94, 248);
     }
     header {
         width: auto;
@@ -367,7 +362,6 @@ footer {
         margin: 15px 0px;
     }
     /*% Estilos para los enlaces */
-    .container-menu .cont-enlace .enlace {}
     .container-menu .cont-enlace .enlace a {
         background: rgb(255, 255, 255);
         text-decoration: none;
@@ -432,23 +426,50 @@ footer {
         margin: 0;
         padding: 5px;
         width: 95%;
-        border: rgb(65, 252, 149) solid 5px;
     }
     .future {
         width: 95%;
         flex-wrap: wrap;
         flex-direction: column-reverse;
         padding: 0;
-        border: yellow solid 5px;
         margin: auto;
     }
     .future img {
-        width: 85vw;
+        width: 65vw;
         height: 50%;
     }
     .future-body {
         width: 90%;
         padding: 0;
         margin: 0;
+    }
+    /** Seccion 2  */
+    .state-section {
+        height: 410px;
+        display: flex;
+        align-items: center;
+    }
+    .state {
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .state img {
+        width: 15rem;
+        height: auto;
+        position: relative;
+        top: -100px;
+    }
+    .state-txt {
+        position: relative;
+        top: -140px;
+        width: 97%;
+    }
+    /** Seccion 2  */
+    .free {
+        flex-wrap: wrap;
+    }
+    .free-txt {
+        width: 100%;
+        padding-bottom: 5rem;
     }
 }
