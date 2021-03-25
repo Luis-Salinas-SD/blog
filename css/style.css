@@ -291,7 +291,7 @@ main {
     padding: .5rem 0;
 }
 
-/** footer */
+/** ++++++++++++++++++++ footer ++++++++++++++++++++ */
 
 footer {
     background: rgb(20, 20, 46);
@@ -300,6 +300,7 @@ footer {
     border-radius: 0px 70px 0px 0px;
     margin-top: 1px;
     font-family: 'Overpass', sans-serif;
+    padding: 5rem 0;
 }
 
 footer .footer-flex {
@@ -308,6 +309,7 @@ footer .footer-flex {
     flex-wrap: wrap;
     align-items: center;
     color: #ffffff;
+    margin-top: 3rem;
 }
 
 footer .footer-flex img {
@@ -505,5 +507,9 @@ footer .footer-flex .menu-footer ul li a {
     .free-txt {
         width: 100%;
         padding-bottom: 5rem;
+    }
+    footer {
+        width: 100%;
+        height: auto;
     }
 }
