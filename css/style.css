@@ -5,7 +5,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     border-bottom-left-radius: 100px;
     margin-bottom: 100px;
 }
@@ -235,8 +235,7 @@ main {
 /** Seccion 2  */
 
 .state-section {
-    margin: 3rem 0;
-    padding: 2px;
+    margin: 3rem 0px;
     color: #e3e3e6;
     height: 480px;
 }
@@ -279,7 +278,7 @@ main {
 }
 
 .free-section img {
-    width: 50%;
+    width: auto;
     height: 400px;
 }
 
@@ -289,7 +288,7 @@ main {
 }
 
 .free-txt p {
-    padding: .5rem 2rem;
+    padding: .5rem 0;
 }
 
 /** footer */
@@ -297,10 +296,41 @@ main {
 footer {
     background: rgb(20, 20, 46);
     width: 100%;
-    height: 300px;
+    height: auto;
     border-radius: 0px 70px 0px 0px;
-    display: block;
     margin-top: 1px;
+    font-family: 'Overpass', sans-serif;
+}
+
+footer .footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #ffffff;
+}
+
+footer .footer-flex img {
+    margin: 1rem 4rem;
+    padding: 1rem;
+}
+
+footer .footer-flex .menu-footer {
+    margin: 2px 3rem;
+    padding: 15px;
+}
+
+footer .footer-flex .menu-footer ul {
+    list-style: none;
+}
+
+footer .footer-flex .menu-footer ul li {
+    margin: 9px;
+}
+
+footer .footer-flex .menu-footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /*& ++++++++++++++++++++ Movil - Menú - Responsive  ++++++++++++++++++++*/
@@ -316,7 +346,7 @@ footer {
     .menu-icon {
         color: rgb(255, 255, 255);
         display: block;
-        position: fixed;
+        position: absolute;
         top: 15px;
         right: 16px;
         font-size: 2.5rem;
@@ -464,9 +494,13 @@ footer {
         top: -140px;
         width: 97%;
     }
-    /** Seccion 2  */
+    /** Seccion 3  */
     .free {
         flex-wrap: wrap;
+    }
+    .free img {
+        width: 400px;
+        height: auto;
     }
     .free-txt {
         width: 100%;
